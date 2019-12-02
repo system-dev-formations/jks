@@ -1,0 +1,19 @@
+Started by upstream project "[8mha:////4HLpDtnemaxJYFVP/bu2AdIzWegIZ6TrLLLhO0vC0h9/AAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYZ/az8JP2C1JJkoI2Zybop+cnZqUW6SaWZOSn6ALXbVFTRAAAA[0mpetclinic-docker-build" build number [8mha:////4IO/FrYGvHYXU0FKxjps5gL8/Edt9kLEaY+zSRzXwXPAAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBln9rPwk/YLUkmSgjZnJuin5ydmpRbpJpZk5KfrGACCP+7PSAAAA[0m3
+originally caused by:
+ Started by upstream project "[8mha:////4B5sAuEBLCv97qsN76Y+VYDD/PptO5ir5outKs/AWzp9AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2C1JJkoI2Zybp5qRWlxfoA87Tex8oAAAA=[0mpetclinic-nexus" build number [8mha:////4MfbyCTFCEB9eIOCOmfdwFsV4CyrPtTrJu+dWxMCWqe5AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YLUkmSgjZnJunmpFaXF+sYAuTqzVcsAAAA=[0m3
+ originally caused by:
+  Started by upstream project "[8mha:////4GSqVMHfysVwbynTV5YRUTjFG0zLarbhOWxRusqryk+dAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2C1JJkoI2ZybpAnYlF+gC5j2BFygAAAA==[0mpetclinic-sonar" build number [8mha:////4AbOMM5o1Vc83disKy4UO6VQOzVktbvUMKv6EAXMMNzTAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YLUkmSgjZnJukCdiUX6xgAMLDjDywAAAA==[0m3
+  originally caused by:
+   Started by upstream project "[8mha:////4IsDEYQ8GWD7LfWaD7ue0KA4npdx21dXYwW/AHI5PRDVAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP2C1JJkoI2ZyfoADJtam8QAAAA=[0mpetclinic" build number [8mha:////4AeCT+0MiJU8GQ82eFLXb8qTa7DnY/MH+TuY3HWMP2leAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/YLUkmSgjZnJ+sYAMeT3KMUAAAA=[0m3
+   originally caused by:
+    Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-test-application
+[petclinic-test-application] $ /bin/sh -xe /tmp/jenkins4872941422431341158.sh
++ CONTAINER_NAME=petclinic-test
++ docker ps --all --quiet --filter=name=petclinic-test
++ OLD=
++ [ -n  ]
++ docker run -d --name petclinic-test -p 8090:8080 petclinic-project:latest
+65146124c2396e221478af7c56fe3723f19f6071d6643c84dcc4c966b15d1f66
+Finished: SUCCESS

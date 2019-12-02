@@ -1,0 +1,149 @@
+Started by upstream project "[8mha:////4B5sAuEBLCv97qsN76Y+VYDD/PptO5ir5outKs/AWzp9AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2C1JJkoI2Zybp5qRWlxfoA87Tex8oAAAA=[0mpetclinic-nexus" build number [8mha:////4MfbyCTFCEB9eIOCOmfdwFsV4CyrPtTrJu+dWxMCWqe5AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YLUkmSgjZnJunmpFaXF+sYAuTqzVcsAAAA=[0m3
+originally caused by:
+ Started by upstream project "[8mha:////4GSqVMHfysVwbynTV5YRUTjFG0zLarbhOWxRusqryk+dAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2C1JJkoI2ZybpAnYlF+gC5j2BFygAAAA==[0mpetclinic-sonar" build number [8mha:////4AbOMM5o1Vc83disKy4UO6VQOzVktbvUMKv6EAXMMNzTAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YLUkmSgjZnJukCdiUX6xgAMLDjDywAAAA==[0m3
+ originally caused by:
+  Started by upstream project "[8mha:////4IsDEYQ8GWD7LfWaD7ue0KA4npdx21dXYwW/AHI5PRDVAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP2C1JJkoI2ZyfoADJtam8QAAAA=[0mpetclinic" build number [8mha:////4AeCT+0MiJU8GQ82eFLXb8qTa7DnY/MH+TuY3HWMP2leAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/YLUkmSgjZnJ+sYAMeT3KMUAAAA=[0m3
+  originally caused by:
+   Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-docker-build
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/plb-formation/spring-framework-petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/plb-formation/spring-framework-petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/plb-formation/spring-framework-petclinic.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d3e481e4b45af0ca4d897d934cb1f7669cfe016c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d3e481e4b45af0ca4d897d934cb1f7669cfe016c # timeout=10
+Commit message: "test"
+ > git rev-list --no-walk d3e481e4b45af0ca4d897d934cb1f7669cfe016c # timeout=10
+Copied 1 artifact from "[8mha:////4AV64lQEePNR1C/WTf90Jw8CwkOFHbwAKzkISxDHb+XYAAAAjx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLGHg18/KT9IvSC1JBtqYmawPADt0tdmUAAAA[0mpetclinic" build number [8mha:////4HcwA85Ii7d/QQIXIdgVXMIg3S/TwZ1DrjVb5YEMCh3cAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYRDUz8pP0i9ILUkG2piZrG+sDwDZjsVnlgAAAA==[0m3
+[petclinic-docker-build] $ /bin/sh -xe /tmp/jenkins533271731504454756.sh
++ docker build -t petclinic-project:latest .
+Sending build context to Docker daemon   41.8MB
+Step 1/21 : FROM fabric8/java-centos-openjdk8-jdk:1.5.1
+1.5.1: Pulling from fabric8/java-centos-openjdk8-jdk
+7dc0dca2b151: Pulling fs layer
+d8b9c218d964: Pulling fs layer
+3739b4b8d966: Pulling fs layer
+3d51b46300ba: Pulling fs layer
+513a484b7c05: Pulling fs layer
+d0218162c4b0: Pulling fs layer
+bc9413501019: Pulling fs layer
+daaadbc3a1ff: Pulling fs layer
+3d51b46300ba: Waiting
+02c4bf6cd7a1: Pulling fs layer
+513a484b7c05: Waiting
+d0218162c4b0: Waiting
+bc9413501019: Waiting
+02c4bf6cd7a1: Waiting
+d8b9c218d964: Verifying Checksum
+d8b9c218d964: Download complete
+3d51b46300ba: Verifying Checksum
+3d51b46300ba: Download complete
+7dc0dca2b151: Download complete
+3739b4b8d966: Verifying Checksum
+3739b4b8d966: Download complete
+d0218162c4b0: Verifying Checksum
+d0218162c4b0: Download complete
+513a484b7c05: Download complete
+bc9413501019: Verifying Checksum
+bc9413501019: Download complete
+daaadbc3a1ff: Download complete
+02c4bf6cd7a1: Verifying Checksum
+02c4bf6cd7a1: Download complete
+7dc0dca2b151: Pull complete
+d8b9c218d964: Pull complete
+3739b4b8d966: Pull complete
+3d51b46300ba: Pull complete
+513a484b7c05: Pull complete
+d0218162c4b0: Pull complete
+bc9413501019: Pull complete
+daaadbc3a1ff: Pull complete
+02c4bf6cd7a1: Pull complete
+Digest: sha256:ba0548dc80e12ac176a231447f66a573904b8ba926ef68bdd942734ef2fb817c
+Status: Downloaded newer image for fabric8/java-centos-openjdk8-jdk:1.5.1
+ ---> 0125e048d57b
+Step 2/21 : MAINTAINER rhuss@redhat.com
+ ---> Running in 38a473153151
+Removing intermediate container 38a473153151
+ ---> 39f9a8f3ca6a
+Step 3/21 : EXPOSE 8080
+ ---> Running in 7ef77a8b977e
+Removing intermediate container 7ef77a8b977e
+ ---> 7000fb2c9f7d
+Step 4/21 : ENV TOMCAT_VERSION 8.5.32
+ ---> Running in 1c01f2ab00c4
+Removing intermediate container 1c01f2ab00c4
+ ---> 6dbeeb27ae34
+Step 5/21 : ENV DEPLOY_DIR /maven
+ ---> Running in ecd77e3c0d4f
+Removing intermediate container ecd77e3c0d4f
+ ---> f82d9edffadf
+Step 6/21 : USER root
+ ---> Running in e2ed08f36def
+Removing intermediate container e2ed08f36def
+ ---> 0c08fac0fbf5
+Step 7/21 : ADD tomcat_conf/agent-bond-opts /opt/run-java-options
+ ---> e88558106472
+Step 8/21 : RUN mkdir -p /opt/agent-bond  && curl http://central.maven.org/maven2/io/fabric8/agent-bond-agent/1.2.0/agent-bond-agent-1.2.0.jar           -o /opt/agent-bond/agent-bond.jar  && chmod 444 /opt/agent-bond/agent-bond.jar  && chmod 755 /opt/run-java-options
+ ---> Running in abd490f5d9e1
+[91m  % Total    % Received % Xferd  Average S[0m[91mpeed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  1  844k    1 13139    0     0   295k      0  0:0[0m[91m0:02 --:--:--  0:00:02  291k[0m[91m100  844k  100  844k    0     0  11.4M      0[0m[91m --:--:-- --:--:-- --:--:-- 11.3M
+[0mRemoving intermediate container abd490f5d9e1
+ ---> 340f6d1ea7b8
+Step 9/21 : ADD tomcat_conf/jmx_exporter_config.yml /opt/agent-bond/
+ ---> 0a8f8409cd46
+Step 10/21 : EXPOSE 8778 9779
+ ---> Running in c297261076c3
+Removing intermediate container c297261076c3
+ ---> d19d1ab3a584
+Step 11/21 : RUN curl http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -o /tmp/catalina.tar.gz  && tar xzf /tmp/catalina.tar.gz -C /opt  && ln -s /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat  && chown -R jboss /opt/tomcat /opt/apache-tomcat-${TOMCAT_VERSION}  && rm /tmp/catalina.tar.gz
+ ---> Running in 15e01ddc92a6
+[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m 73 9360k   73 6920k    0     0  18.7M      0 [0m[91m--:--:-- --:--:-- --:--:-- 18.7M[0m[91m100 9360k  100 9360k    0     0  19.3M      0 --:--:[0m[91m-- --:--:-- --:--:-- 19.3M
+[0mRemoving intermediate container 15e01ddc92a6
+ ---> 5d7d82da669b
+Step 12/21 : ADD tomcat_conf/tomcat-users.xml /opt/apache-tomcat-${TOMCAT_VERSION}/conf/
+ ---> d4df4719cd7f
+Step 13/21 : ADD tomcat_conf/context.xml /opt/apache-tomcat-${TOMCAT_VERSION}/webapps/manager/META-INF
+ ---> b3429c3341b4
+Step 14/21 : ADD target/petclinic*.war /opt/apache-tomcat-${TOMCAT_VERSION}/webapps/petclinic.war
+ ---> 788f71a150e5
+Step 15/21 : ADD tomcat_conf/deploy-and-run.sh /opt/apache-tomcat-${TOMCAT_VERSION}/bin/
+ ---> 86be3254781a
+Step 16/21 : RUN chmod 755 /opt/apache-tomcat-${TOMCAT_VERSION}/bin/deploy-and-run.sh  && rm -rf /opt/tomcat/webapps/examples /opt/tomcat/webapps/docs   && chgrp -R 0 /opt/tomcat/webapps  && chmod -R g=u /opt/tomcat/webapps
+ ---> Running in 7b61010cdb5a
+Removing intermediate container 7b61010cdb5a
+ ---> c9994780b473
+Step 17/21 : VOLUME [ "/opt/tomcat/logs", "/opt/tomcat/work", "/opt/tomcat/temp", "/tmp/hsperfdata_root" ]
+ ---> Running in 0d2aa66dfc23
+Removing intermediate container 0d2aa66dfc23
+ ---> ac8e2aeb7a3e
+Step 18/21 : ENV CATALINA_HOME /opt/tomcat
+ ---> Running in 6c7d318b4a87
+Removing intermediate container 6c7d318b4a87
+ ---> 930591cf6d5c
+Step 19/21 : ENV PATH $PATH:$CATALINA_HOME/bin
+ ---> Running in a87a064dcaa5
+Removing intermediate container a87a064dcaa5
+ ---> 6c2d43d2ad1f
+Step 20/21 : CMD /opt/tomcat/bin/deploy-and-run.sh
+ ---> Running in 1aee485df3fc
+Removing intermediate container 1aee485df3fc
+ ---> d7c821048fee
+Step 21/21 : USER jboss
+ ---> Running in 645c23247b73
+Removing intermediate container 645c23247b73
+ ---> aefb7c10d289
+Successfully built aefb7c10d289
+Successfully tagged petclinic-project:latest
+Triggering a new build of [8mha:////4HX6Vphb2Kdk8pZZ70FYaEyCm1w6XkyfFw1ZnnhUyYNQAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAypEgYF/az8JP2C1JJkoI2ZybolqcUluokFBTmZyYklmfl5+gAVs+ZR1QAAAA==[0mpetclinic-test-application
+Triggering a new build of [8mha:////4Ip7xbWJd3PTZtkUnlWBRsiYbPSS6njg4pEkNwAlUd32AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JP2C1JJkoI2ZybolqcUluqWJJfoAQAgfsM0AAAA=[0mpetclinic-test-uat
+Finished: SUCCESS

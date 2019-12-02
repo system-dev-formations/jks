@@ -1,0 +1,317 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.15">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.4.0">
+      <stagesUUID>7c117aae-991e-4cf4-895f-b178f6e8387f</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.4.0">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Non-Parallel Stage</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">This stage will be executed first.</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Parallel Stage</name>
+              <branches/>
+              <parallel>
+                <stages>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <name>Checkstyle</name>
+                    <branches>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                        <name>default</name>
+                        <steps>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                            <name>sh</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>script</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">mvn clean package checkstyle:checkstyle</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        </steps>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    </branches>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <name>Sonarqube</name>
+                    <branches>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                        <name>default</name>
+                        <steps>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                            <name>withSonarQubeEnv</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                              <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                                <value class="string">SonarQube</value>
+                              </value>
+                            </args>
+                            <children>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                                <name>dir</name>
+                                <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                                  <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                                    <value class="string">/sonar/workspace</value>
+                                  </value>
+                                </args>
+                                <children>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>checkout</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>scm</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">${scm}</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </children>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                                <name>ws</name>
+                                <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                                  <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                                    <value class="string">/sonar/workspace</value>
+                                  </value>
+                                </args>
+                                <children>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;mvn  clean package sonar:sonar -Dsonar.host_url=$SONAR_HOST_URL &quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </children>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                            </children>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                        </steps>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    </branches>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                </stages>
+                <uuid>01d07c5d-c5b2-418a-9c5d-a33ba65c9d77</uuid>
+              </parallel>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>7c117aae-991e-4cf4-895f-b178f6e8387f</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.0.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.0.0">
+              <sha1>6a95ed0a9a96ac4730383534c80a30851ff662e0</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/plb-formation/spring-framework-petclinic.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.0.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/petclinic-pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.9">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/plb-formation/spring-framework-petclinic.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.sonar.action.SonarMarkerAction plugin="sonar@2.8.1"/>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.77">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.sonar.action.SonarAnalysisAction plugin="sonar@2.8.1">
+      <installationName>SonarQube</installationName>
+      <isNew>true</isNew>
+      <isSkipped>true</isSkipped>
+    </hudson.plugins.sonar.action.SonarAnalysisAction>
+  </actions>
+  <queueId>52</queueId>
+  <timestamp>1575106145329</timestamp>
+  <startTime>1575106145342</startTime>
+  <result>SUCCESS</result>
+  <duration>247208</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    agent any
+    tools {
+        maven &quot;Maven 3.6.3&quot;
+    }
+    options {
+        parallelsAlwaysFailFast()
+    }
+    stages {
+        stage(&apos;Non-Parallel Stage&apos;) {
+            steps {
+                echo &apos;This stage will be executed first.&apos;
+            }
+        }
+        stage(&apos;Parallel Stage&apos;) {
+            parallel {
+                   stage(&apos;Checkstyle&apos;) {
+                        steps{
+                            // Run the maven build with checkstyle
+                            sh &quot;mvn clean package checkstyle:checkstyle&quot;
+                         }
+                     }
+                    stage(&apos;Sonarqube&apos;) {
+                        steps {
+                            withSonarQubeEnv(&apos;SonarQube&apos;) {
+                            dir(&apos;/sonar/workspace&apos;){
+                               checkout scm
+                            }
+                            ws(&apos;/sonar/workspace&apos;){
+                                sh &quot;mvn  clean package sonar:sonar -Dsonar.host_url=$SONAR_HOST_URL &quot;
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>958395146</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4072011007</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>13120680952</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>516886924</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>7556348906</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>83</iota>
+    <head>1:83</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/plb-formation/spring-framework-petclinic.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/petclinic-pipeline</workspace>
+      <changelogFile>/var/jenkins_home/jobs/petclinic-pipeline/builds/5/changelog8166391086690245598.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/sonar/workspace</workspace>
+      <changelogFile>/var/jenkins_home/jobs/petclinic-pipeline/builds/5/changelog363076815703565834.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

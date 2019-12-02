@@ -1,0 +1,73 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>petclinic-test-uat</upstreamProject>
+            <upstreamUrl>3fa3ab15-65a0-4397-9380-ca59fd16b5fa/job/petclinic-test-uat/</upstreamUrl>
+            <upstreamBuild>2</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>petclinic-docker-build</upstreamProject>
+                <upstreamUrl>job/petclinic-docker-build/</upstreamUrl>
+                <upstreamBuild>2</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UpstreamCause>
+                    <upstreamProject>petclinic-nexus</upstreamProject>
+                    <upstreamUrl>job/petclinic-nexus/</upstreamUrl>
+                    <upstreamBuild>2</upstreamBuild>
+                    <upstreamCauses>
+                      <hudson.model.Cause_-UpstreamCause>
+                        <upstreamProject>petclinic-sonar</upstreamProject>
+                        <upstreamUrl>job/petclinic-sonar/</upstreamUrl>
+                        <upstreamBuild>2</upstreamBuild>
+                        <upstreamCauses>
+                          <hudson.model.Cause_-UpstreamCause>
+                            <upstreamProject>petclinic</upstreamProject>
+                            <upstreamUrl>job/petclinic/</upstreamUrl>
+                            <upstreamBuild>2</upstreamBuild>
+                            <upstreamCauses>
+                              <hudson.model.Cause_-UserIdCause>
+                                <userId>admin</userId>
+                              </hudson.model.Cause_-UserIdCause>
+                            </upstreamCauses>
+                          </hudson.model.Cause_-UpstreamCause>
+                        </upstreamCauses>
+                      </hudson.model.Cause_-UpstreamCause>
+                    </upstreamCauses>
+                  </hudson.model.Cause_-UpstreamCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters/>
+      <parameterDefinitionNames class="empty-list"/>
+    </hudson.model.ParametersAction>
+  </actions>
+  <queueId>16</queueId>
+  <timestamp>1574959451272</timestamp>
+  <startTime>1574959451275</startTime>
+  <result>SUCCESS</result>
+  <duration>11702</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/petclinic-production</workspace>
+  <hudsonVersion>2.206</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

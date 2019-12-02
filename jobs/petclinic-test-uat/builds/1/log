@@ -1,0 +1,11 @@
+Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-test-uat
+[petclinic-test-uat] $ /bin/sh -xe /tmp/jenkins6429590431130269528.sh
++ CONTAINER_NAME=petclinic-uat
++ docker ps --all --quiet --filter=name=petclinic-uat
++ OLD=
++ [ -n  ]
++ docker run -d --name petclinic-uat -p 8290:8080 petclinic-project:latest
+38d421a76cc529d21ffa57704f5348b2b5ece624958f72b48e936044d954704c
+Finished: SUCCESS

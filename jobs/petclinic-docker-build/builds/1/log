@@ -1,0 +1,148 @@
+Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-docker-build
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/plb-formation/spring-framework-petclinic.git
+ > git init /var/jenkins_home/workspace/petclinic-docker-build # timeout=10
+Fetching upstream changes from https://github.com/plb-formation/spring-framework-petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/plb-formation/spring-framework-petclinic.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/plb-formation/spring-framework-petclinic.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/plb-formation/spring-framework-petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/plb-formation/spring-framework-petclinic.git
+ > git fetch --tags --progress -- https://github.com/plb-formation/spring-framework-petclinic.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d3e481e4b45af0ca4d897d934cb1f7669cfe016c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d3e481e4b45af0ca4d897d934cb1f7669cfe016c # timeout=10
+Commit message: "test"
+First time build. Skipping changelog.
+Copied 1 artifact from "[8mha:////4AV64lQEePNR1C/WTf90Jw8CwkOFHbwAKzkISxDHb+XYAAAAjx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLGHg18/KT9IvSC1JBtqYmawPADt0tdmUAAAA[0mpetclinic" build number [8mha:////4BbK6oQvoScPkgXDqr++8sVBRHBXKlxCw9Je3fx1r6aYAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYRDUz8pP0i9ILUkG2piZrG+oDwBb7PNVlgAAAA==[0m1
+[petclinic-docker-build] $ /bin/sh -xe /tmp/jenkins7079901069542817872.sh
++ docker build -t petclinic-project:latest .
+Sending build context to Docker daemon   41.8MB
+Step 1/21 : FROM fabric8/java-centos-openjdk8-jdk:1.5.1
+1.5.1: Pulling from fabric8/java-centos-openjdk8-jdk
+7dc0dca2b151: Pulling fs layer
+d8b9c218d964: Pulling fs layer
+3739b4b8d966: Pulling fs layer
+3d51b46300ba: Pulling fs layer
+513a484b7c05: Pulling fs layer
+d0218162c4b0: Pulling fs layer
+bc9413501019: Pulling fs layer
+daaadbc3a1ff: Pulling fs layer
+02c4bf6cd7a1: Pulling fs layer
+3d51b46300ba: Waiting
+513a484b7c05: Waiting
+d0218162c4b0: Waiting
+bc9413501019: Waiting
+daaadbc3a1ff: Waiting
+02c4bf6cd7a1: Waiting
+d8b9c218d964: Verifying Checksum
+d8b9c218d964: Download complete
+3d51b46300ba: Verifying Checksum
+3d51b46300ba: Download complete
+513a484b7c05: Download complete
+7dc0dca2b151: Verifying Checksum
+7dc0dca2b151: Download complete
+3739b4b8d966: Verifying Checksum
+3739b4b8d966: Download complete
+d0218162c4b0: Verifying Checksum
+d0218162c4b0: Download complete
+bc9413501019: Download complete
+daaadbc3a1ff: Verifying Checksum
+daaadbc3a1ff: Download complete
+02c4bf6cd7a1: Verifying Checksum
+02c4bf6cd7a1: Download complete
+7dc0dca2b151: Pull complete
+d8b9c218d964: Pull complete
+3739b4b8d966: Pull complete
+3d51b46300ba: Pull complete
+513a484b7c05: Pull complete
+d0218162c4b0: Pull complete
+bc9413501019: Pull complete
+daaadbc3a1ff: Pull complete
+02c4bf6cd7a1: Pull complete
+Digest: sha256:ba0548dc80e12ac176a231447f66a573904b8ba926ef68bdd942734ef2fb817c
+Status: Downloaded newer image for fabric8/java-centos-openjdk8-jdk:1.5.1
+ ---> 0125e048d57b
+Step 2/21 : MAINTAINER rhuss@redhat.com
+ ---> Running in 3eb2bfd4358f
+Removing intermediate container 3eb2bfd4358f
+ ---> 4f81f2f1f0d9
+Step 3/21 : EXPOSE 8080
+ ---> Running in 8ed330fa8854
+Removing intermediate container 8ed330fa8854
+ ---> c4285de8adda
+Step 4/21 : ENV TOMCAT_VERSION 8.5.32
+ ---> Running in fb625a67c2b9
+Removing intermediate container fb625a67c2b9
+ ---> 8d16b9bde80d
+Step 5/21 : ENV DEPLOY_DIR /maven
+ ---> Running in 7ff155984a59
+Removing intermediate container 7ff155984a59
+ ---> 7c58f28f8bc3
+Step 6/21 : USER root
+ ---> Running in 252ebe544c8b
+Removing intermediate container 252ebe544c8b
+ ---> de046d775c01
+Step 7/21 : ADD tomcat_conf/agent-bond-opts /opt/run-java-options
+ ---> ba4623dc6512
+Step 8/21 : RUN mkdir -p /opt/agent-bond  && curl http://central.maven.org/maven2/io/fabric8/agent-bond-agent/1.2.0/agent-bond-agent-1.2.0.jar           -o /opt/agent-bond/agent-bond.jar  && chmod 444 /opt/agent-bond/agent-bond.jar  && chmod 755 /opt/run-java-options
+ ---> Running in 8488c9ab3436
+[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m100  844k  100  844k    0     0  12.0M      0 --:--:-- --:--:-- --:--:-- 12.1M
+[0mRemoving intermediate container 8488c9ab3436
+ ---> 6e60f17c0e4e
+Step 9/21 : ADD tomcat_conf/jmx_exporter_config.yml /opt/agent-bond/
+ ---> 524bd1a16b7f
+Step 10/21 : EXPOSE 8778 9779
+ ---> Running in 5a34137df37a
+Removing intermediate container 5a34137df37a
+ ---> ae904729119a
+Step 11/21 : RUN curl http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -o /tmp/catalina.tar.gz  && tar xzf /tmp/catalina.tar.gz -C /opt  && ln -s /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat  && chown -R jboss /opt/tomcat /opt/apache-tomcat-${TOMCAT_VERSION}  && rm /tmp/catalina.tar.gz
+ ---> Running in 2d63a841f3bc
+[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--[0m[91m     0[0m[91m 49 9360k   49 4612k    0     0  18.9M      0 --:--[0m[91m:-- --:--:-- --:--:-- 18.8M[0m[91m100 9360k  100 9360k    0     0  16.5M      0 --:--:-- --:--:-- --:--:-- 16.4M
+[0mRemoving intermediate container 2d63a841f3bc
+ ---> 305857a2844d
+Step 12/21 : ADD tomcat_conf/tomcat-users.xml /opt/apache-tomcat-${TOMCAT_VERSION}/conf/
+ ---> 8bdfbe9876cb
+Step 13/21 : ADD tomcat_conf/context.xml /opt/apache-tomcat-${TOMCAT_VERSION}/webapps/manager/META-INF
+ ---> 4c1a0834451f
+Step 14/21 : ADD target/petclinic*.war /opt/apache-tomcat-${TOMCAT_VERSION}/webapps/petclinic.war
+ ---> ebdee266e847
+Step 15/21 : ADD tomcat_conf/deploy-and-run.sh /opt/apache-tomcat-${TOMCAT_VERSION}/bin/
+ ---> 4ccac639241c
+Step 16/21 : RUN chmod 755 /opt/apache-tomcat-${TOMCAT_VERSION}/bin/deploy-and-run.sh  && rm -rf /opt/tomcat/webapps/examples /opt/tomcat/webapps/docs   && chgrp -R 0 /opt/tomcat/webapps  && chmod -R g=u /opt/tomcat/webapps
+ ---> Running in 85c364ccad72
+Removing intermediate container 85c364ccad72
+ ---> 9319df840696
+Step 17/21 : VOLUME [ "/opt/tomcat/logs", "/opt/tomcat/work", "/opt/tomcat/temp", "/tmp/hsperfdata_root" ]
+ ---> Running in 29e645fd9420
+Removing intermediate container 29e645fd9420
+ ---> 60a6c8e8e8d5
+Step 18/21 : ENV CATALINA_HOME /opt/tomcat
+ ---> Running in 01130a19ff14
+Removing intermediate container 01130a19ff14
+ ---> 9de928e29366
+Step 19/21 : ENV PATH $PATH:$CATALINA_HOME/bin
+ ---> Running in cd7375e98c37
+Removing intermediate container cd7375e98c37
+ ---> c70ab61954e1
+Step 20/21 : CMD /opt/tomcat/bin/deploy-and-run.sh
+ ---> Running in c307c5b948fa
+Removing intermediate container c307c5b948fa
+ ---> 853d8438efe7
+Step 21/21 : USER jboss
+ ---> Running in a0c7ddcebf5d
+Removing intermediate container a0c7ddcebf5d
+ ---> cdb8521c634b
+Successfully built cdb8521c634b
+Successfully tagged petclinic-project:latest
+Finished: SUCCESS

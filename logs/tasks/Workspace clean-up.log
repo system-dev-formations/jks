@@ -1,0 +1,10 @@
+Started at Sat Nov 30 07:39:21 UTC 2019
+Checking petclinic
+Checking petclinic-checkstyle
+Checking petclinic-docker-build
+Checking petclinic-nexus
+Checking petclinic-production
+Checking petclinic-sonar
+Checking petclinic-test-application
+Checking petclinic-test-uat
+Finished at Sat Nov 30 07:39:21 UTC 2019. 13ms

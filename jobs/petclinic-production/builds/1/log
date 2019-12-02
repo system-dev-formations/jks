@@ -1,0 +1,11 @@
+Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-production
+[petclinic-production] $ /bin/sh -xe /tmp/jenkins8778332019872049042.sh
++ CONTAINER_NAME=petclinic-prod
++ docker ps --all --quiet --filter=name=petclinic-prod
++ OLD=
++ [ -n  ]
++ docker run -d --name petclinic-prod -p 8390:8080 petclinic-project:latest
+a4674200a7a96fad806ed9b70cccaba104f9b98a987a5937c5600ec20899b5b6
+Finished: SUCCESS

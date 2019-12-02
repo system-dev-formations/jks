@@ -1,0 +1,7 @@
+Started by user [8mha:////4NPafIm/qmVl9uVPEiJ4Nyp2QimJHSOLdG3OlnXxFlYwAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZu/dLi1CL9xJTczDwAfXVmD8AAAAA=[0mhme
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/petclinic-nexus
+Copied 1 artifact from "[8mha:////4AV64lQEePNR1C/WTf90Jw8CwkOFHbwAKzkISxDHb+XYAAAAjx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLGHg18/KT9IvSC1JBtqYmawPADt0tdmUAAAA[0mpetclinic" build number [8mha:////4BbK6oQvoScPkgXDqr++8sVBRHBXKlxCw9Je3fx1r6aYAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYRDUz8pP0i9ILUkG2piZrG+oDwBb7PNVlgAAAA==[0m1
+Uploading Maven asset with groupId: org.springframework.samples artifactId: spring-framework-petclinic version: ${BUILD_NUMBER} To repository: releases
+Successfully Uploaded Maven Assets
+Finished: SUCCESS
